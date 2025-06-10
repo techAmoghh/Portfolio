@@ -312,3 +312,67 @@ section {
     scroll-behavior: auto !important;
   }
 }
+
+/* Mobile-specific optimizations for 375×667 */
+@media (max-width: 375px) and (max-height: 667px) {
+  /* Reduce padding and margins */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Adjust hero section spacing */
+  #home {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  /* Optimize section spacing */
+  section {
+    padding: 2.5rem 1rem;
+  }
+
+  /* Adjust project cards */
+  .project-card {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+
+  /* Optimize font sizes */
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Adjust skills cloud */
+  .skills-container {
+    padding: 1rem 0;
+  }
+
+  /* Optimize buttons */
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  /* Adjust contact section */
+  .contact-info {
+    gap: 1rem;
+  }
+
+  /* Optimize navigation */
+  .nav-links {
+    gap: 1rem;
+  }
+
+  /* Adjust footer */
+  footer {
+    padding: 1.5rem 1rem;
+  }
+}

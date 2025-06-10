@@ -120,7 +120,7 @@ function App() {
   activeSection === 'home' 
     ? 'bg-transparent backdrop-blur-none' 
     : 'bg-cream/80 dark:bg-dark-bg/80 backdrop-blur-md'
-} px-4 sm:px-6`}>
+} px-3 sm:px-6`}>
   <div className="container mx-auto">
     <div className="flex items-center justify-between h-16">
       <Link
@@ -195,18 +195,18 @@ function App() {
 
       <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
 
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 lg:pl-32 pt-16 sm:pt-20">
-        <section id='home' className="min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] flex items-center justify-center py-8 sm:py-12 md:py-16">
+      <main className="container mx-auto px-3 sm:px-6 lg:px-8 lg:pl-32 pt-16 sm:pt-20">
+        <section id='home' className="min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] flex items-center justify-center py-6 sm:py-12 md:py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="w-full max-w-4xl text-center"
+            className="w-full max-w-4xl text-center px-2 sm:px-0"
           >
-            <div className="space-y-4 sm:space-y-6">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold dark:text-tech-purple text-tech-blue">
+            <div className="space-y-3 sm:space-y-6">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold dark:text-tech-purple text-tech-blue">
                 <GreetingAnimation /> 
               </h1>
-              <h1 className="text-gray-600 dark:text-gray-400 text-2xl sm:text-3xl md:text-4xl font-medium">
+              <h1 className="text-gray-600 dark:text-gray-400 text-xl sm:text-3xl md:text-4xl font-medium">
                 I'm Amogh Hambarde
               </h1>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2">
@@ -233,12 +233,12 @@ function App() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-12 sm:py-16 relative">
+        <section id="about" className="py-8 sm:py-16 relative">
   <div className="absolute inset-0 -z-10"></div>
   
-  <div className="max-w-6xl mx-auto px-4 sm:px-6">
-    <div className="text-center mb-10 sm:mb-14">
-      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">
+  <div className="max-w-6xl mx-auto px-3 sm:px-6">
+    <div className="text-center mb-8 sm:mb-14">
+      <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">
         About <span className="text-tech-blue dark:text-tech-purple">Me</span>
       </h2>
      
@@ -459,8 +459,8 @@ function App() {
   </div>
 </section>
 
-        <section id="skills" className="py-12 sm:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <section id="skills" className="py-8 sm:py-16">
+          <div className="max-w-7xl mx-auto px-3 sm:px-6">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
               Tech <span className="text-tech-blue dark:text-tech-purple">Stack</span>
             </h2>
@@ -468,8 +468,8 @@ function App() {
           </div>
         </section>
 
-        <section id="work" className="py-12 sm:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <section id="work" className="py-8 sm:py-16">
+          <div className="max-w-7xl mx-auto px-3 sm:px-6">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
               Featured <span className="text-tech-blue dark:text-tech-purple">Projects</span>
             </h2>
@@ -482,7 +482,7 @@ function App() {
         </section>
 
         <section id="contact" className="pt-60 sm:pt-36">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto px-3 sm:px-6">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
               Let's <span className="text-tech-blue dark:text-tech-purple">Connect</span>
             </h2>
