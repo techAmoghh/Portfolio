@@ -195,7 +195,7 @@ function App() {
 
       <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
 
-      <main className="container mx-auto px-3 sm:px-6 lg:px-8 lg:pl-32 pt-16 sm:pt-20">
+      <main className="container mx-auto px-3 sm:px-6 lg:px-8 xl:px-0 xl:max-w-6xl pt-16 sm:pt-20">
         <section id='home' className="min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] flex items-center justify-center py-6 sm:py-12 md:py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
