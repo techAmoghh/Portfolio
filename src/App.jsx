@@ -410,18 +410,18 @@ function App() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="bg-white dark:bg-gray-800/20 rounded-2xl sm:pb-16 shadow-lg hover:shadow-xl transition-all duration-300 sm:px-40 p-6 sm:p-7"
+        className="bg-white dark:bg-gray-800/20 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-4 sm:p-6 lg:px-0 lg:pl-28"
       >
-        <div className="flex items-center mb-5">
-          <div className="w-10 h-10 sm:w-11 sm:h-11 sm:ml-[290px] rounded-full bg-tech-blue/10 dark:bg-tech-purple/20 flex items-center justify-center mr-3 shrink-0">
+        <div className="flex items-center mb-5 lg:mx-[342px] ">
+          <div className="w-10 h-10 sm:w-11 sm:h-11  rounded-full bg-tech-blue/10 dark:bg-tech-purple/20 flex items-center justify-center mr-3 shrink-0">
             <span className="text-tech-blue dark:text-tech-purple text-xl">💼</span>
           </div>
           <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white">Experience</h3>
         </div>
         
         {/* Desktop View */}
-        <div className="relative w-full max-w-4xl">
-          <div className="hidden lg:grid grid-cols-4 gap-10  text-left">
+        <div className="relative w-full">
+          <div className="hidden lg:grid grid-cols-4 gap-6 text-left">
             <div className="space-y-2">
               <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Company</p>
               <p className="text-sm font-medium text-gray-800 dark:text-white">WebHub Technology</p>
@@ -447,11 +447,18 @@ function App() {
           </div>
           
           {/* Mobile Layout */}
-          <div className="lg:hidden flex flex-col ">
-            <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Web Developer Intern</h4>
-            <p className="text-sm font-medium mt-1">@ WebHub Technology</p>
-            <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Pune, Maharashtra, India</p>
-            <span className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-2">March 2025 - Present</span>
+          <div className="lg:hidden">
+            <h4 className="text-base font-semibold text-gray-800 dark:text-white">Web Developer Intern</h4>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">@ WebHub Technology</p>
+            <div className="flex items-center mt-1">
+              <svg className="w-3.5 h-3.5 mr-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span className="text-xs text-gray-500">Pune, India</span>
+              <span className="mx-2 text-gray-400">•</span>
+              <span className="text-xs text-gray-500">Mar 2025 - Present</span>
+            </div>
           </div>
         </div>
       </motion.div>
